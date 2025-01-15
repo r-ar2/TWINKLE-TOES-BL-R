@@ -32,7 +32,7 @@ function createCard(playerData, index) {
         <div><u>MVPS</u>: ${playerData.mvps}</div>
         <div><u>Anklers</u>: ${playerData.anklers}</div>
         <div><u>Matches</u>: ${playerData.matches}</div>
-        <div class="discordUser">${playerData.user}<div>
+        <div class="discordUser">${playerData.user}</div>
         <button class="popupCloser">X</button>
       </div>
       <button class="deleteCardButton">Delete</button>
