@@ -35,9 +35,9 @@ function createCard(playerData, index) {
         <div class="discordUser">${playerData.user}</div>
         <button class="popupCloser">X</button>
       </div>
-      <button class="deleteCardButton">Delete</button>
     </div>
   `;
+       // <button class="deleteCardButton">Delete</button> // Place inside of divs above
 
   const otherStatsButton = newCard.querySelector('.otherStats');
   const popupCloserButton = newCard.querySelector('.popupCloser');
