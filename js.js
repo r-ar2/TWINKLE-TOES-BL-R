@@ -35,7 +35,7 @@ function createCard(playerData, index) {
         <div class="discordUser">${playerData.user}</div>
         <button class="popupCloser">X</button>
       </div>
-       <button class="deleteCardButton">Delete</button>
+       <button class="deleteCardButton coolName">Delete</button>
     </div>
   `;
 
