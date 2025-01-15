@@ -32,9 +32,9 @@ function createCard(playerData, index) {
         <div><u>MVPS</u>: ${playerData.mvps}</div>
         <div><u>Anklers</u>: ${playerData.anklers}</div>
         <div><u>Matches</u>: ${playerData.matches}</div>
+        <div class="discordUser">${playerData.user}<div>
         <button class="popupCloser">X</button>
       </div>
-      <!-- Delete button -->
       <button class="deleteCardButton">Delete</button>
     </div>
   `;
@@ -75,9 +75,10 @@ addCardButton.addEventListener('click', function () {
   const playerMvps = prompt('Enter the number of MVPS:');
   const playerAnklers = prompt('Enter the number of Anklers:');
   const playerMatches = prompt('Enter the number of matches:');
+  const playerUser = prompt("Enter the player's Discord username:")
   const playerImage = prompt('Enter the image name (include filetype!):')
 
-  if (!playerName || !playerGoals || !playerAssists || !playerRating || !playerSteals || !playerSaves || !playerMvps || !playerAnklers || !playerMatches || !playerImage) {
+  if (!playerName || !playerGoals || !playerAssists || !playerRating || !playerSteals || !playerSaves || !playerMvps || !playerAnklers || !playerMatches || !playerImage || !playerUser) {
     alert('All fields are required to create a new card!');
     return;
   }
@@ -93,6 +94,7 @@ addCardButton.addEventListener('click', function () {
     anklers: playerAnklers,
     matches: playerMatches,
     image: playerImage,
+    user: playerUser
   };
 
   playerCards.push(newPlayer);
