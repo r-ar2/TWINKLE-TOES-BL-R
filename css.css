@@ -139,3 +139,7 @@ body {
     position: absolute;
     top: 20px;
 }
+
+.coolName {
+    display: none;
+}
