@@ -19,7 +19,7 @@ function createCard(playerData, index) {
   newCard.innerHTML = `
     <div class="cardBase">
       <div class="playerName">${playerData.name}</div>
-      <img src="images/${playerData.image}" width="190px" height="140px" class="playerImage">
+      <img src="${playerData.image}" width="190px" height="140px" class="playerImage">
       <div class="overallRating">OVR: ${playerData.rating}</div>
       <div class="playerStats">
         <div><u>Goals</u>: ${playerData.goals}</div>
