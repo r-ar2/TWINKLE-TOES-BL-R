@@ -128,11 +128,12 @@ body {
 .discordUser {
     position: absolute;
     top: 2.5px;
-    right: 55px;
+    right: 75px;
     color: rgb(190, 190, 190);
     background-color: rgba(1, 1, 1, 0);
     border: none;
     font-size: 9px;
+    user-select: all;
 }
 
 .deleteCardButton {
